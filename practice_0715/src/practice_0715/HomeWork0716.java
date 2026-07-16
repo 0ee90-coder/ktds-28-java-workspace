@@ -34,17 +34,17 @@ public class HomeWork0716 {
 	}	
 	
 	//4. 정수 한 개를 받아서 소수(prime number)라면 true를 아니라면 false를 반환하는 메소드를 만들고 호출해 보세요.
-	public static boolean isPrimeNumber(int num4) {
-		
-		if(num4 % 2 == 0) {
-			
-		}
-		
-		if(num4 % 3 == 0) {
-			
-		}
-		
-	}
+//	public static boolean isPrimeNumber(int num4) {
+//		
+//		if(num4 % 2 == 0) {
+//			
+//		}
+//		
+//		if(num4 % 3 == 0) {
+//			
+//		}
+//		
+//	}
 		
 	public static void main(String[] args) {
 		
