@@ -49,14 +49,31 @@ public class HomeWork0719 {
 			min = num15; 
 		}else if(num16 < min) {
 			min = num16;
-		}else if()
+		}else if(num17 < min) {
+			min = num17;
+		}
+		return min;
 	}
 
 //	8. 정수 배열을 파라미터로 받아, 2,5,8 배수인 숫자만 출력하는 메소드.
+	
+	public static void isIntArray(int[] array) {
+		for(int i=1; i<array.length; i++) {
+			if(array[i] % 2 == 0 || array[i] % 5 ==0) {
+				System.out.print(array[i]);
+			}
+		}	
+	}
+	
 
 //	9. 문자열 1개와 정수형 변수 1개를 파라미터로 받아, 문자열을 정수형 변수만큼 반복 출력하는 메소드.
 
 //	10. 정수형 변수 1개를 파라미터로 받아, 해당 정수의 구구단을 출력하는 메소드.
+	public static void multiple(int n) {
+		for (int i=1; i<=9; i++) {
+			System.out.println(n + "x" + i + "="+ n * i);
+		}
+	}
 
 //	11. 정수형 변수 1개를 파라미터로 받아, 4부터 정수형 변수까지의 범위 중 소수(Prime Number)만 출력하는 메소드.
 
@@ -71,6 +88,15 @@ public class HomeWork0719 {
 //	    -> 예> 값(길이가 5인 배열, 7) ==> 0
 
 //	13. 정수형 배열 변수 1개를 파라미터로 받아, 가장 처음 나오는 3의 배수만 반환하는 메소드    - 정수형 배열 변수내부에 3의 배수가 없을 경우 -1 을 반환.
+	public static int multipleThree(int[] array) {
+		for(int n : array) {
+			if(n%3 == 0) {
+				return n;
+			}
+		}
+		return -1;
+	}
+
 
 //	14. 정수형 배열 변수 2개를 파라미터로 받아, 각 배열에 중복값만 출력하는 메소드. [ ] 배열이라는 뜻
 //	    -> 중복([1,2,3,4,5], [9,7,454,1,2,3]) ==> 1 2 3
@@ -80,8 +106,22 @@ public class HomeWork0719 {
 
 //	16. 정수형 배열 변수 1개를 파라미터로 받아, 모든 값들을 배수로 만드는(반환X) 메소드.
 //	    -> 호출 이후에 main 메소드 내부에서 배열 내부의 값들을 모두 출력.
-	public static void main(String [] args) {
-		numbers(4,5);
+	
+	public static void main(String[] args) {
+		// 1.정수형 변수 2개를 파라미터로 받아, 값을 출력하는 메소드.
+		numbers(5,10);
+		
+		// 2. 정수형 변수 2개를 파라미터로 받아, 합계를 출력하는 메소드.
+		sumNum(5,10);
+		
+		// 3. 정수형 변수 3개를 파라미터로 받아, 합계를 반환하는 메소드.
+		System.out.println(sumNums(1, 2, 3));
+		
+		// 4.정수형 변수 2개를 파라미터로 받아, 나누기의 결과(실수)를 반환하는 메소드.
+		divideNum(10,5);
+		
+		
+		// 10. 정수형 변수 1개를 파라미터로 받아, 해당 정수의 구구단을 출력하는 메소드.
+		multiple(8);
 	}
-
 }
