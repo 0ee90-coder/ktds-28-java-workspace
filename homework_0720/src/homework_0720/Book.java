@@ -10,7 +10,7 @@ public class Book {
 	/**
 	 * 책 고유 식별자
 	 */
-	int ISBN;
+	String ISBN;
 	
 	/**
 	 * 발행일자
