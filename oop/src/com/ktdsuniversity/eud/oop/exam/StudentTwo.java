@@ -2,11 +2,11 @@ package com.ktdsuniversity.eud.oop.exam;
 
 public class StudentTwo {
 
-	int java; // 멤버변수엔 값을 할당하지 않는다.
-	int python;
-	int cpp;
-	int csharp;
-	int score;
+	private int java; // 멤버변수엔 값을 할당하지 않는다.
+	private int python;
+	private int cpp;
+	private int csharp;
+	private int score;
 
 	public StudentTwo(int java, int python, int cpp, int csharp) {
 		this.java = java;
@@ -15,7 +15,7 @@ public class StudentTwo {
 		this.csharp = csharp;
 	}
 
-	int getSumAllSocres() {
+	private int getSumAllSocres() {
 		return java + python + cpp + csharp;
 	}
 
