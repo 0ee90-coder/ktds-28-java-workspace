@@ -1,0 +1,32 @@
+package com.ktdsuniversity.eud.oop.exam.array;
+
+public class P181854 {
+	
+//	정수 배열 arr 과 정수 n 이 매개변수로 주어집니다. 
+//	arr 의 길이가 홀수라면 arr 의 모든 짝수 인덱스 위치에 n 을 더한 배열을, 
+//	arr 의 길이가 짝수라면 arr 의 모든 홀수 인덱스 위치에 n 을 더한 배열을 return 하는 
+//	solution 함수를 작성해 주세요.
+	
+	public static void main(String[] args) {
+		
+		int[] arr = new int[] {444, 555, 666, 777};
+		int n = 100;
+		
+		System.out.println(arr);
+		for(int i = 0 ; i < arr.length; i++) {
+			if(arr.length % 2 == 1) {
+				if(i % 2 ==0) {
+					arr[i] += n;
+				}
+			} else {
+				if(i%2 == 1) {
+					arr[i] += n;
+				}
+			}
+			System.out.println(arr[i]);
+		}
+		
+		
+	}
+
+}
