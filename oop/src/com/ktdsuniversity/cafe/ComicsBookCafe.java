@@ -17,6 +17,13 @@ public class ComicsBookCafe {
 			
 			ComicsBook book = this.books[i];
 			
+// 1번방법	if(book == null) {
+//				continue;
+//			}
+			
+// 2번방법   
+			if(book != null) {
+			
 			String state = "대여 가능";
 			if (book.getIsRented()) {
 				state = "대여 중";
@@ -26,6 +33,7 @@ public class ComicsBookCafe {
 			System.out.println("만화책 이름: " + book.getName());
 			System.out.println("만화책 대여 상태: " + state);
 			System.out.println("만화책 대여비: " + book.getRentFee());
+			}
 		}
 	}
 	

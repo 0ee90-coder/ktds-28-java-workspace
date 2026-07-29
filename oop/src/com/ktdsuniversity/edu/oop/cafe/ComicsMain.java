@@ -1,4 +1,4 @@
-package com.ktdsuniversity.cafe;
+package com.ktdsuniversity.edu.oop.cafe;
 
 public class ComicsMain {
 
@@ -10,10 +10,6 @@ public class ComicsMain {
 		books[2] = new ComicsBook("슬램덩크 3권", false, 500);
 		
 		ComicsBookCafe playtoon = new ComicsBookCafe(books);
-		
-//		books[0] = null;
-//		books[1] = null;
-//		books[2] = null;
 		
 		Visitor me = new Visitor(4_000);
 		Visitor other = new Visitor(50_000);

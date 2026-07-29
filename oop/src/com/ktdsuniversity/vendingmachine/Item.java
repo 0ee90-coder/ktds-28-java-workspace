@@ -1,4 +1,4 @@
-package com.ktdsuniversity.edu.oop.vendingmachine;
+package com.ktdsuniversity.vendingmachine;
 
 /**
  * 자판기에서 판매하는 상품의 정보
@@ -24,13 +24,12 @@ public class Item {
 	 * 상품 재고
 	 */
 	int itemStock;
-
-	public Item(String itemId, String itemName, int itemPrice, int itemStock) {
-		this.itemId = itemId;
-		this.itemName = itemName;
-		this.itemPrice = itemPrice;
-		this.itemStock = itemStock;
-	}
 	
+	public Item(String itemId,String itemName,int itemPrice,int itemStock) {
+		this.itemId=itemId;
+		this.itemName=itemName;
+		this.itemPrice=itemPrice;
+		this.itemStock=itemStock;
+	}
 	
 }
