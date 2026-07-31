@@ -8,7 +8,7 @@ public class UpDownGame {
 		
 		// 키보드에서 값을 받아올 수 있는 변수 하나를 생성한다.
 		Scanner keyboard = new Scanner(System.in);
-		
+		keyboard.close(); // APP <-> keyboard 사이에 생성된 pipe를 제거하겠다.
 		// "업 다운 게임 시작" 출력.
 		System.out.println("업 다운 게임 시작");
 		
