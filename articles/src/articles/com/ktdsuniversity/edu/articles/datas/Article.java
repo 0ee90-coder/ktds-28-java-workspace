@@ -1,4 +1,4 @@
-package datas;
+package articles.com.ktdsuniversity.edu.articles.datas;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,6 @@ public class Article {
         this.writer = writer;
         this.writeDate = writeDate;
         this.content = content;
-
         this.viewCount = 0;
         this.replies = new ArrayList<>();
     }
@@ -42,7 +41,6 @@ public class Article {
         return viewCount;
     }
 
-    // 조회수 1 증가
     public void increaseViewCount() {
         this.viewCount++;
     }
@@ -50,7 +48,6 @@ public class Article {
     public String getContent() {
         return content;
     }
-
 
     public void changeContent(String content) {
         this.content = content;

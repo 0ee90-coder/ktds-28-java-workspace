@@ -1,4 +1,4 @@
-package datas;
+package articles.com.ktdsuniversity.edu.articles.datas;
 
 public class Reply {
 
@@ -12,7 +12,6 @@ public class Reply {
         this.content = content;
         this.writer = writer;
         this.writeDate = writeDate;
-
         this.recommendCount = 0;
     }
 
