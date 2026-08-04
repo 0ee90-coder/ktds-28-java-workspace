@@ -1,6 +1,5 @@
 package articles.com.ktdsuniversity.edu.articles.datas;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Article {
@@ -12,48 +11,63 @@ public class Article {
 	private String content;        // 게시글 내용
 	private List<Reply> replies;   // 게시글에 달린 댓글 목록
 
-    public Article(String title, String writer, String writeDate, String content) {
-    	this.title = title;
-        this.writer = writer;
-        this.writeDate = writeDate;
-        this.content = content;
-        this.viewCount = 0;
-        this.replies = new ArrayList<>();
-    }
+	public Article(String title, String writer, String writeDate, int viewCount, String content, List<Reply> replies) {
+		super();
+		this.title = title;
+		this.writer = writer;
+		this.writeDate = writeDate;
+		this.viewCount = viewCount;
+		this.content = content;
+		this.replies = replies;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public String getTitle() {
+		return this.title;
+	}
 
-    public void changeTitle(String title) {
-        this.title = title;
-    }
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    public String getWriter() {
-        return writer;
-    }
+	public String getWriter() {
+		return this.writer;
+	}
 
-    public String getWriteDate() {
-        return writeDate;
-    }
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
 
-    public int getViewCount() {
-        return viewCount;
-    }
+	public String getWriteDate() {
+		return this.writeDate;
+	}
 
-    public void increaseViewCount() {
-        this.viewCount++;
-    }
+	public void setWriteDate(String writeDate) {
+		this.writeDate = writeDate;
+	}
 
-    public String getContent() {
-        return content;
-    }
+	public int getViewCount() {
+		return this.viewCount;
+	}
 
-    public void changeContent(String content) {
-        this.content = content;
-    }
+	public void setViewCount(int viewCount) {
+		this.viewCount = viewCount;
+	}
 
-    public List<Reply> getReplies() {
-        return replies;
-    }
+	public String getContent() {
+		return this.content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+	public List<Reply> getReplies() {
+		return this.replies;
+	}
+
+	public void setReplies(List<Reply> replies) {
+		this.replies = replies;
+	}
+
+   
 }
