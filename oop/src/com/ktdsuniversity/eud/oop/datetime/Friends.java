@@ -68,7 +68,10 @@ public class Friends {
 			now = now.withYear(2026);
 			System.out.println(now);
 	}
-	
+	// 친구들의 생일이 오늘의 3일 이전날짜보다 이후이면서 오늘보다 이전이면 foundFriends에 추가.
+	public static void comparePast(LocalDate date) {
+		
+	}
 	
 
 	@Override
