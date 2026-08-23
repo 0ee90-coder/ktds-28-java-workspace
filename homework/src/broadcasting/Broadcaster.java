@@ -22,6 +22,7 @@ public class Broadcaster {
         return name;
     }
 
+ // 현재 시각에 방영 중인 프로그램을 찾아서 반환
     public Program OnAirProgram(LocalTime nowTime) {
         for (Program program : schedule) {
             boolean onAir = (nowTime.equals(program.getStartTime())  || nowTime.isAfter(program.getStartTime()))
