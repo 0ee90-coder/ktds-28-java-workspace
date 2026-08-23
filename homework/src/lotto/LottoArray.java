@@ -1,5 +1,6 @@
 package lotto;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class LottoArray {
@@ -25,7 +26,7 @@ public class LottoArray {
 	        		
 	        	}
 	        }
-	        System.out.println("로또 번호: " + lottoNumbers);
+	        System.out.println("로또 번호: " + Arrays.toString(lottoNumbers));
 	     }
 	}
 
