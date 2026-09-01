@@ -1,28 +1,28 @@
-package com.ktdsuniversity.edu.tmdb.str.vo;
+package com.ktdsuniversity.edu.tmdb.flmmkr.vo;
 
 import com.ktdsuniversity.edu.tmdb.invlvd.vo.InvlvdVO;
 import com.ktdsuniversity.edu.tmdb.mv.vo.MvVO;
 
-public class StrVO {
+public class FlmmkrVO {
 
-	private String strId;
+	private String flmmkrId;
 	private String invlvdId;
 	private String mvId;
-	private String rlNm;
+	private String rl;
+	private String prt;
 	
-	// 출연자 한명이 하나의 영화에 출연했다.
+	// 참여자 한명이 하나의 영화를 제작했다.
 	private MvVO mvVO;
 	
-	// 출연자의 정보
+	// 제작자 한명에 대한 참여자 정보
 	private InvlvdVO invlvdVO;
 
-	
-	public String getStrId() {
-		return strId;
+	public String getFlmmkId() {
+		return flmmkrId;
 	}
 
-	public void setStrId(String strId) {
-		this.strId = strId;
+	public void setFlmmkId(String flmmkId) {
+		this.flmmkrId = flmmkId;
 	}
 
 	public String getInvlvdId() {
@@ -41,12 +41,20 @@ public class StrVO {
 		this.mvId = mvId;
 	}
 
-	public String getRlNm() {
-		return rlNm;
+	public String getRl() {
+		return rl;
 	}
 
-	public void setRlNm(String rlNm) {
-		this.rlNm = rlNm;
+	public void setRl(String rl) {
+		this.rl = rl;
+	}
+
+	public String getPrt() {
+		return prt;
+	}
+
+	public void setPrt(String prt) {
+		this.prt = prt;
 	}
 
 	public MvVO getMvVO() {
@@ -67,7 +75,8 @@ public class StrVO {
 
 	@Override
 	public String toString() {
-		return "StrVO [strId=" + strId + ", invlvdId=" + invlvdId + ", mvId=" + mvId + ", rlNm=" + rlNm + "]";
+		return "FlmmkrVO [flmmkrId=" + flmmkrId + ", invlvdId=" + invlvdId + ", mvId=" + mvId + ", rl=" + rl + ", prt="
+				+ prt + "]";
 	}
 
 }
